@@ -40,6 +40,12 @@ function addTask(title) {
  * false    |   true
  */
 function onUpdateIsDone(task) {
+    if(isDone == false){
+        isDone = true;
+    }else{
+        isDone = false;
+    }
+
     console.log("チェックボックスがクリックされました。", task);
 
     // 達成状態を更新(このままだと、現在の達成状態で更新されてしまう！)
